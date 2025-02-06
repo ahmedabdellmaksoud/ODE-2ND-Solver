@@ -1,0 +1,115 @@
+# How to Contribute to the ODE Solver Project
+
+## Introduction
+This project is an advanced second-order ODE solver. The code allows users to solve different types of linear second-order ODEs (both homogeneous and non-homogeneous) using various methods, including the enhanced Roncicam method. The solver is designed to be modular and easy to extend.
+
+# Help Guide for Inputting Mathematical Expressions
+
+## Introduction
+
+This guide explains how to input mathematical expressions when using the ODE Solver. The solver allows you to enter various types of mathematical functions, including polynomials, exponentials, trigonometric functions, and logarithms. Below are instructions on how to input different kinds of mathematical expressions.
+
+---
+
+## Mathematical Functions
+
+### 1. **Basic Arithmetic Operators**
+- Use `+`, `-`, `*`, `/` for addition, subtraction, multiplication, and division.
+  - Example: `x + 2`, `3 * x**2`, `x / (x + 1)`
+
+### 2. **Exponentiation (Powers)**
+- Use `**` for exponentiation (raising to a power).
+  - Example: `x**2` (x squared), `x**(3/2)` (x raised to the power of 3/2)
+
+### 3. **Trigonometric Functions**
+- Use `sin(x)`, `cos(x)`, `tan(x)` for sine, cosine, and tangent functions.
+  - Example: `sin(x)`, `cos(x + 2)`, `tan(x)**2`
+
+### 4. **Exponential Functions**
+- Use `exp(x)` for the exponential function e^x.
+  - Example: `exp(x)`, `exp(2 * x)`, `x * exp(x)`
+
+### 5. **Logarithmic Functions**
+- Use `log(x)` for the natural logarithm (ln(x)).
+  - Example: `log(x)`, `log(x + 1)`, `log(x**2 + 1)`
+- Use `log(x, base)` for logarithms with a custom base.
+  - Example: `log(x, 10)` for the base-10 logarithm.
+
+### 6. **Fractional Powers (Rational Numbers)**
+- Use `Rational(n, d)` to represent fractional powers or rational numbers. This is useful when inputting roots or other non-integer exponents.
+  - Example: `x**(Rational(1, 2))` for the square root of x, `x**(Rational(3, 4))` for the fourth root of x.
+
+### 7. **Square Roots**
+- You can input square roots using `sqrt(x)`.
+  - Example: `sqrt(x)`, `sqrt(x + 1)`
+
+### 8. **Symbolic Variables**
+- You can define variables symbolically using `symbols()`.
+  - Example: `x = symbols('x')` creates a symbolic variable `x` for use in expressions.
+
+---
+
+## Examples of Valid Inputs
+
+### Linear Expression
+- `2*x + 3` is a simple linear expression.
+
+### Polynomial Expression
+- `x**3 + 4*x**2 + 2*x + 1` is a cubic polynomial.
+
+### Exponential Function
+- `exp(x)` represents the exponential function e^x.
+- `2 * x * exp(x)` is 2x * e^x.
+
+### Trigonometric Expression
+- `sin(x) + cos(x)` is the sum of sine and cosine of `x`.
+- `tan(x)**2` is the square of tangent of `x`.
+
+### Logarithmic Expression
+- `log(x)` represents the natural logarithm of `x`.
+- `log(x + 1)` is the logarithm of `(x + 1)`.
+
+### Fractional Power
+- `x**(Rational(3, 2))` represents `x^(3/2)`.
+
+### Square Root
+- `sqrt(x)` represents the square root of `x`.
+
+---
+
+## Tips for Input
+
+### 1. **Be Careful with Parentheses**
+- Always use parentheses to ensure the correct order of operations, especially in expressions involving multiple functions.
+  - Example: `sin(x + 1)` is different from `sin(x) + 1`.
+
+### 2. **Use SymPy Functions**
+- You must use the functions provided by SymPy such as `exp`, `sin`, `log`, `sqrt`, and `Rational` for proper evaluation.
+- Example:
+  - `exp(x)`, not `e**x` for the exponential function.
+  - `sin(x)` for sine, not `sinx(x)`.
+
+### 3. **Handling Special Cases**
+- For cases involving fractional powers or irrational numbers, use `Rational(n, d)` instead of decimals to avoid rounding errors.
+  - Example: Use `x**(Rational(3, 2))` instead of `x**1.5`.
+
+---
+
+## Common Mistakes to Avoid
+
+1. **Using undefined functions**
+   - Always make sure to use the functions supported by SymPy (like `exp`, `sin`, `cos`, `log`, etc.).
+   
+2. **Not using parentheses where needed**
+   - Expressions like `sin(x + 1)` vs `sin(x) + 1` will lead to different results.
+
+3. **Using floating-point numbers instead of rational numbers**
+   - For fractional powers, always use `Rational(n, d)` instead of decimal points to get exact results.
+
+---
+
+## Conclusion
+
+By following these guidelines, you can input a wide range of mathematical expressions into the ODE Solver. Ensure you use SymPy functions and proper syntax to make the most of the solver's capabilities. If you encounter any issues or need further assistance, please refer to the documentation or reach out for support.
+
+Happy solving! 🚀
