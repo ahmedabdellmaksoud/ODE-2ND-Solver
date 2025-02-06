@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ODE-2ND-Solver
  This project implements an advanced second-order ODE solver
 =======
@@ -11,7 +10,7 @@ This project implements an advanced second-order ODE solver that can handle both
 - Linear Non-Homogeneous ODE (Undetermined Coefficients)
 - Linear Non-Homogeneous ODE (Enhanced Roncicam Method)
 - Euler-Cauchy Equation
-![Alt text](/home/aabdellmaksoud/Pictures/Screenshots/250206_04h39m42s_screenshot.png)
+![Terminal](/home/aabdellmaksoud/Pictures/Screenshots/250206_04h39m42s_screenshot.png)
 
 ## Installation
 
@@ -21,4 +20,4 @@ Clone the repository and install the required dependencies:
 git clone https://github.com/ahmedabdellmaksoud/ODE-2ND-Solver.git
 cd ODE-2ND-Solver
 pip install -r requirements.txt
->>>>>>> 4b28381 (First)
+
