@@ -9,7 +9,7 @@ This project implements an advanced second-order ODE solver that can handle both
 - Linear Non-Homogeneous ODE (Enhanced Roncicam Method)
 - Euler-Cauchy Equation
 
-![Terminal](./ODE-2ND-Solver/Terminal.png)
+![Terminal](./Terminal.png)
 ## Installation
 
 Clone the repository and install the required dependencies:
