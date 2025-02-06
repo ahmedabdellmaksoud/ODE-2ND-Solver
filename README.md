@@ -1,5 +1,7 @@
 
 # ODE-2ND-Solver
+ This project implements an advanced second-order ODE solver
+=======
 # Advanced Second-Order ODE Solver
 
 This project implements an advanced second-order ODE solver that can handle both homogeneous and non-homogeneous linear ODEs. It uses the enhanced Roncicam method for solving complex equations.
@@ -9,6 +11,7 @@ This project implements an advanced second-order ODE solver that can handle both
 - Linear Non-Homogeneous ODE (Undetermined Coefficients)
 - Linear Non-Homogeneous ODE (Enhanced Roncicam Method)
 - Euler-Cauchy Equation
+
 ![Alt text](/home/aabdellmaksoud/Pictures/Screenshots/250206_04h39m42s_screenshot.png)
 
 ## Installation
